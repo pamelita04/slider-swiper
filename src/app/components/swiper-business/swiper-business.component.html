@@ -1,0 +1,26 @@
+<div container-swiper>
+  <swiper [config]="config" #usefulSwiper>
+    <div class="swiper-wrapper">
+      <div container-image class="swiper-slide">
+        <div item-image *ngFor="let item of listBusiness; let i=index">
+          <img src="../assets/images/{{item.name}}.png" />
+        </div>
+      </div>
+      <div container-image class="swiper-slide">
+        <div item-image *ngFor="let item of listBusiness; let i=index">
+          <img src="../assets/images/{{item.name}}.png" />
+        </div>
+      </div>
+      <div container-image class="swiper-slide">
+        <div item-image *ngFor="let item of listBusiness; let i=index">
+          <img src="../assets/images/{{item.name}}.png" />
+        </div>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <!-- <div class="swiper-button-prev"></div> -->
+  </swiper>
+</div>
